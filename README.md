@@ -59,7 +59,7 @@ ls -l entrypoint.sh
 chmod +x entrypoint.sh
 ```
 
-# 9. 도커 컴포즈 실행
+# 10. 도커 컴포즈 실행
 
 ```bash  
 sudo docker-compose -f docker-compose.yml up -d
