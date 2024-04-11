@@ -27,6 +27,11 @@ ENV FLASK_RUN_HOST=0.0.0.0
 ENV FLASK_RUN_PORT=5000
 
 
-# Entrypoint 스크립트 추가
+# 스크립트 파일 복사
 COPY entrypoint.sh /app/entrypoint.sh
+
+# 실행 권한 부여
+RUN chmod +x /app/entrypoint.sh
+
+# entrypoint 설정
 ENTRYPOINT ["/app/entrypoint.sh"]
