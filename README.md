@@ -55,5 +55,5 @@ cd oz-test-miniproject-1
 # 9. 도커 컴포즈 실행
 
 ```bash  
-docker-compose -f docker-compose.yml up -d
+sudo docker-compose -f docker-compose.yml up -d
 ```
