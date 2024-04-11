@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  flaskapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: flaskapp
+    volumes:
+      - .:/app
+    environment:
+      - FLASK_APP=app:create_app
+      - FLASK_RUN_HOST=0.0.0.0
+    expose:
+      - "5000"
+
+
+  nginx:
+    image: nginx:latest
+    container_name: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - flaskapp
