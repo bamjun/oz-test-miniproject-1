@@ -42,7 +42,9 @@ sudo chmod +x /usr/local/bin/docker-compose
 
 # 7. 깃 클론  
 
+```bash
 git clone https://github.com/bamjun/oz-test-miniproject-1.git
+```
 
 # 8. 설치 폴더로 이동  
 
