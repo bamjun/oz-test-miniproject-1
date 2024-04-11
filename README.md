@@ -52,6 +52,13 @@ git clone https://github.com/bamjun/oz-test-miniproject-1.git
 cd oz-test-miniproject-1
 ```
 
+# 9.  entrypoint.sh 권한 부여
+
+```bash
+ls -l entrypoint.sh
+chmod +x entrypoint.sh
+```
+
 # 9. 도커 컴포즈 실행
 
 ```bash  
