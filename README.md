@@ -101,6 +101,9 @@ Ubuntu 환경에서 위의 작업을 수행하기 위한 명령어는 다음과 
     ```sh
     sudo usermod -aG docker $USER
     ```
+    ```sh
+    sudo usermod -aG docker ${USER}
+    ```
 
 4. **Docker Compose 설치**:
     ```sh
@@ -114,12 +117,12 @@ Ubuntu 환경에서 위의 작업을 수행하기 위한 명령어는 다음과 
 
 6. **Git 클론**:
     ```sh
-    git clone https://github.com/bamjun/oz-test-miniproject-1.git
+    git clone https://github.com/bamjun/[git hub address].git
     ```
 
 7. **설치 폴더로 이동**:
     ```sh
-    cd oz-test-miniproject-1
+    cd [git folder]
     ```
 
 8. **`entrypoint.sh` 권한 부여**:
