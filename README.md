@@ -116,6 +116,11 @@ Ubuntu 환경에서 위의 작업을 수행하기 위한 명령어는 다음과 
     ```
 
 6. **Git 클론**:
+
+    ```sh
+    git config --global credential.helper store
+    ```
+    
     ```sh
     git clone https://github.com/bamjun/[git hub address].git
     ```
@@ -131,7 +136,7 @@ Ubuntu 환경에서 위의 작업을 수행하기 위한 명령어는 다음과 
     chmod +x entrypoint.sh
     ```
 
-9. **Docker Compose 실행**:
+9.  **Docker Compose 실행**:
     ```sh
     sudo docker-compose -f docker-compose.yml up -d
     ```
