@@ -28,6 +28,17 @@ sudo systemctl enable docker
 sudo usermod -aG docker ec2-user
 ```
 
+```sh
+sudo usermod -aG docker $USER
+```
+```sh
+sudo usermod -aG docker ${USER}
+```
+
+```bash
+exec su -l $USER
+```
+
 # 5. 도커 컴포즈 설치
 
 ```bash
