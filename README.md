@@ -115,6 +115,9 @@ Ubuntu 환경에서 위의 작업을 수행하기 위한 명령어는 다음과 
     ```sh
     sudo usermod -aG docker ${USER}
     ```
+    ```
+    newgrp docker
+    ```
 
 4. **Docker Compose 설치**:
     ```sh
